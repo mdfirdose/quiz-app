@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-app</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+
+    <section class="container">
+        <div class="row">
+            <h1>The Quiz App</h1>
+        </div>
+        <div id="body" class="row">
+            <div id="quiz_questions" class="col-9">
+                <form id="quiz">
+                    <div id="questions_container">
+                        <!-- JS generated questions will be added here -->
+                    </div>
+                    <div id="submit_row" class="row">
+                        <button id="submit_button" type="submit" class="btn btn-primary btn-sm col-3"
+                            onclick="calculate_score();">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div id="score_card" class="col-2">
+                <div class="row">
+                    <p>Score</p>
+                </div>
+                <div class="row">
+                    <p id="score_value"><span id="score">0</span> / 5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
